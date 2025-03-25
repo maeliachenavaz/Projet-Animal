@@ -1,24 +1,12 @@
-class Animal
+abstract class Animal
 {
-    private string name;
-
-    public Animal()
+    public virtual void PrintMoove()
     {
-        this.name = "Bob";
+        Console.WriteLine("Animal moove");
     }
 
-    public Animal(string name)
+    public virtual void PrintSleep()
     {
-        this.name = name;
-    }
-
-    public void PrintMoove()
-    {
-        Console.WriteLine("Moove");
-    }
-
-    public void PrintSleep()
-    {
-        Console.WriteLine("Sleep");
+        Console.WriteLine("Animal sleep");
     }
 }
