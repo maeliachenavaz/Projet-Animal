@@ -2,8 +2,9 @@
 {
     public static void Main()
     {
-        Animal animal = new Animal();
-        animal.PrintMoove();
-        animal.PrintSleep();
+        Animal dragon = new Dragon();
+        Animal griffin = new Griffin();
+        dragon.PrintMoove();
+        griffin.PrintSleep();
     }
 }
