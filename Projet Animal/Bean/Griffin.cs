@@ -1,15 +1,16 @@
 ﻿class Griffin : Animal
 {
-    public string Name { get; private set; }
+    public new int Id { get; private set; }
 
-    public Griffin()
-    {
-        this.Name = "Bob le griffon";
-    }
+    public new string Name { get; private set; }
 
-    public Griffin(string name)
+    public new string Rarete { get; private set; }
+
+    public Griffin(int id, string name, string rarete) : base(id, name, rarete)
     {
+        this.Id = id;
         this.Name = name;
+        this.Rarete = rarete;
     }
 
     public override void PrintMoove()

@@ -1,15 +1,16 @@
 ﻿class Dragon : Animal, IPilotable
 {
-    public string Name { get; private set; }
+    public new int Id { get; private set; }
 
-    public Dragon()
-    {
-        this.Name = "Bob le dragon";
-    }
+    public new string Name { get; private set; }
 
-    public Dragon(string name)
+    public new string Rarete { get; private set; }
+
+    public Dragon(int id, string name, string rarete) : base(id, name, rarete)
     {
+        this.Id = id;
         this.Name = name;
+        this.Rarete = rarete;
     }
 
     public void MooveInterface()

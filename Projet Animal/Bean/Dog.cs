@@ -1,15 +1,16 @@
 ﻿class Dog : Animal
 {
-    public string Name { get; private set; }
+    public new int Id { get; private set; }
 
-    public Dog()
-    {
-        this.Name = "Snow";
-    }
+    public new string Name { get; private set; }
 
-    public Dog(string name)
+    public new string Rarete { get; private set; }
+
+    public Dog(int id, string name, string rarete) : base(id, name, rarete) 
     {
+        this.Id = id;
         this.Name = name;
+        this.Rarete = rarete;
     }
 
     public override void PrintMoove()

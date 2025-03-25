@@ -4,20 +4,18 @@ class Program
 {
     public static void Main()
     {
-        IList<Dog> dogList =
-        [
-            new Dog("Bob"),
-            new Dog("Bob"),
-            new Dog("Bob"),
-            new Dog("Snow"),
-            new Dog("Bob"),
-        ];
-
-        IEnumerable<string> dogNameList = from dog in dogList where dog.Name != "Snow" select dog.Name;
-
-        foreach (string dogName in dogNameList)
+        IList<Animal> animalList = new List<Animal>
         {
-            Console.WriteLine(dogName);
+            new Dog(1, "Bob le chien", "Commun"),
+            new Dragon(2, "Bob le dragon", "Rare"),
+            new Griffin(3, "Bob le griffon", "Très rare"),
+        };
+
+        var rareAnimalList = animalList.Where(animal => animal.Rarete != "Commun");
+
+        foreach (Animal animal in rareAnimalList)
+        {
+            Console.WriteLine(animal.Id + " : " + animal.Name);
         }
     }
 }
