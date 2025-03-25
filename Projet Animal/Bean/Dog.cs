@@ -1,12 +1,12 @@
 ﻿class Dog : Animal
 {
-    public new int Id { get; private set; }
+    public override int Id { get; protected set; }
 
-    public new string Name { get; private set; }
+    public override string Name { get; protected set; }
 
-    public new string Rarete { get; private set; }
+    public override string Rarete { get; protected set; }
 
-    public Dog(int id, string name, string rarete) : base(id, name, rarete) 
+    public Dog(int id, string name, string rarete)
     {
         this.Id = id;
         this.Name = name;

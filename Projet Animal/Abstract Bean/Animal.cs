@@ -1,15 +1,10 @@
 abstract class Animal
 {
-    public int Id { get; private set; }
-    public string Name { get; private set; }
-    public string Rarete { get; private set; }
+    public abstract int Id { get; protected set; }
 
-    public Animal(int id, string name, string rarete)
-    {
-        this.Id = id;
-        this.Name = name;
-        this.Rarete = rarete;
-    }
+    public abstract string Name { get; protected set; }
+
+    public abstract string Rarete { get; protected set; }
 
     public virtual void PrintMoove()
     {
