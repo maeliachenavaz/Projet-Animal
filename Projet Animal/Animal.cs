@@ -1,4 +1,4 @@
-﻿class Animal
+class Animal
 {
     private string name;
 
