@@ -4,6 +4,7 @@
 
     public Griffin()
     {
+        this.Name = "Bob le griffon";
     }
 
     public Griffin(string name)

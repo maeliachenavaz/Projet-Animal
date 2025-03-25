@@ -1,23 +1,24 @@
-﻿class Dragon : Animal
+﻿class Dog : Animal
 {
     public string Name { get; private set; }
 
-    public Dragon()
+    public Dog()
     {
+        this.Name = "Snow";
     }
 
-    public Dragon(string name)
+    public Dog(string name)
     {
         this.Name = name;
     }
 
     public override void PrintMoove()
     {
-        Console.WriteLine("Dragon moove");
+        Console.WriteLine("Dog moove");
     }
 
     public new void PrintSleep()
     {
-        Console.WriteLine("Dragon sleep");
+        Console.WriteLine("Dog sleep");
     }
 }
