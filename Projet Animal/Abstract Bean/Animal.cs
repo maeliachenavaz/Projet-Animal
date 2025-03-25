@@ -1,4 +1,4 @@
-﻿abstract class Animal
+abstract class Animal
 {
     public virtual void PrintMoove()
     {
