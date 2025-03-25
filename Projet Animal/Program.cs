@@ -4,12 +4,14 @@ class Program
 {
     public static void Main()
     {
-        IList<Dog> dogList = new List<Dog>();
-        dogList.Add(new Dog("Bob"));
-        dogList.Add(new Dog("Bob"));
-        dogList.Add(new Dog("Bob"));
-        dogList.Add(new Dog("Snow"));
-        dogList.Add(new Dog("Bob"));
+        IList<Dog> dogList =
+        [
+            new Dog("Bob"),
+            new Dog("Bob"),
+            new Dog("Bob"),
+            new Dog("Snow"),
+            new Dog("Bob"),
+        ];
 
         IEnumerable<string> dogNameList = from dog in dogList where dog.Name != "Snow" select dog.Name;
 
