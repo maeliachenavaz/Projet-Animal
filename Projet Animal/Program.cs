@@ -2,6 +2,8 @@
 {
     public static void Main()
     {
-        Console.WriteLine("test");
+        Animal animal = new Animal();
+        animal.PrintMoove();
+        animal.PrintSleep();
     }
 }
