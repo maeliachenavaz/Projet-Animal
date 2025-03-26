@@ -1,6 +1,4 @@
-﻿abstract class Bird : IFly
+﻿abstract class Bird : Animal, IFly
 {
-    public abstract string Name { get; protected set; }
-
     public abstract void Fly();
 }

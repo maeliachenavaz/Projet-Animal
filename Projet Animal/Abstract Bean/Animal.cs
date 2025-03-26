@@ -1,10 +1,12 @@
 abstract class Animal
 {
-    public abstract int Id { get; protected set; }
+    public int Id { get; protected set; }
 
-    public abstract string Name { get; protected set; }
+    public string? Name { get; protected set; }
 
-    public abstract string Rarete { get; protected set; }
+    public string? Rarete { get; protected set; }
+
+    public abstract void Create(string name, Rarity rarity);
 
     public virtual void PrintMoove()
     {
